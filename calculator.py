@@ -1,23 +1,20 @@
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-# Funktion zur Umrechnung Kilogramm in Gramm
-def kg_in_g (kg):
-    return kg * 1000
+#Eingabefenster Bediener
+def menue():
+    while True:
+        print("\n Auswahlmenü")
+        print("1. kg->g")
+        print("2. cm->zoll")
+        print("3. Bar->Pascal")
+        print("4. ????")
+        print("5. break")
 
-#Nutzereingabe
-kilogramm = float(input("Bitte geben Sie das Gewicht in kg ein:"))
+1 == kg
+#2 = cm
+#3 = Bar
+#4 = ???
+#5 = !break
 
-#Umrechnung
-gramm = kg_in_g(kilogramm)
+if input: 1
 
-#Ausgabe
 
-print(f"{kilogramm} Kilogramm sind {gramm} Gramm.")
+kg == float(input ("Bitte Wert für kg angeben"))
