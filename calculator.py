@@ -9,7 +9,7 @@ def kW_in_W(kW):
     return kW * 1000
 
 #Bediener Auswahl
-def main():
+def Umrechner():
     while True:
         print("Wählen Sie eine Umrechnungsmöglichkeit:")
         print("1. kg zu gr")
@@ -44,5 +44,4 @@ def main():
             print("Ungültige Wahl. Bitte wählen Sie eine gültige Option.\n")
 
 #Menüauswahl
-if __name__ == "__main__":
-    main()
+Umrechner()
