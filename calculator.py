@@ -8,6 +8,14 @@ def cm_in_zoll(cm):
 def kW_in_W(kW):
     return kW * 1000
 
+#Wenn die Eingabe für die umzurechnende Einheit kein float ist, wird dieser hier abgefangen und auf eine gültige Eingabe gewartet.
+def is_valid_float(input_str):
+    try:
+        float(input_str)
+        return True
+    except ValueError:
+        return False
+
 #Bediener Auswahl
 def Umrechner():
     while True:
@@ -22,26 +30,38 @@ def Umrechner():
 
 #variable Berechnung
         if choice == '1':
-            kg = float(input("Geben Sie die kg ein: "))
-            g = kg_in_gramm(kg)
-            print(f"{kg} Kilogramm sind {g} Gramm.\n")
+            kg = input("Geben Sie die kg ein: ")
+            if is_valid_float(kg):
+                kg = float(kg)
+                g = kg_in_gramm(kg)
+                print(f"{kg} Kilogramm sind {g} Gramm.\n")
+            else:
+                print("\n Ungültige Eingabe. Bitte geben Sie eine gültige Zahl ein.\n")
         
         elif choice == '2':
-            cm = float(input("Geben Sie die cm ein: "))
-            zoll = cm_in_zoll(cm)
-            print (f"{cm} cm sind {zoll} Zoll. \n")
+            cm = input("Geben Sie die cm ein: ")
+            if is_valid_float(cm):
+                cm = float(cm)
+                zoll = cm_in_zoll(cm)
+                print (f"{cm} cm sind {zoll} Zoll. \n")
+            else:
+                print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
             
         elif choice == '3':
-            kW = float(input("Geben Sie die kW ein: "))
-            W = kW_in_W(kW)
-            print (F"{kW} kw sind {W} W.")
+            kW = input("Geben Sie die kW ein: ")
+            if is_valid_float(kW):
+                kW = float(kW)
+                W = kW_in_W(kW)
+                print (F"{kW} kw sind {W} W.")
+            else:
+                print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
-#Schleife unterbrechen
         elif choice == '4':
             print("Programm beendet.")
             break
+              
         else:
-            print("Ungültige Wahl. Bitte wählen Sie eine gültige Option.\n")
+            print("\nUngültige Wahl. Bitte wählen Sie eine gültige Option.\n")
 
 #Menüauswahl
 Umrechner()
