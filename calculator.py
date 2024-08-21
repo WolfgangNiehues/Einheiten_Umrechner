@@ -1,23 +1,23 @@
 #Umrechnung
-def kg_in_gramm(kg):
+def kg_in_gramm(kg: float) -> float:
     return kg * 1000
 
-def cm_in_zoll(cm):
+def cm_in_zoll(cm: float) -> float:
     return cm / 2.54
 
-def kW_in_W(kW):
+def kW_in_W(kW: float) -> float:
     return kW * 1000
 
 #Wenn die Eingabe für die umzurechnende Einheit kein float ist, wird dieser hier abgefangen und auf eine gültige Eingabe gewartet.
-def is_valid_float(Bedi_Eing):
+def is_valid_float(str) -> bool:
     try:
-        float(Bedi_Eing)
+        float(str)
         return True
     except ValueError:
         return False
 
 #Bediener Auswahl
-def Umrechner():
+def Umrechner(): 
     while True:
         print("\n Wählen Sie eine Umrechnungsmöglichkeit:")
         print("\n 1. kg zu gr \
@@ -32,29 +32,29 @@ def Umrechner():
 
 #variable Berechnung
         if choice == '1':
-            kg = input("Geben Sie die kg ein: ")
+            kg: str = input("Geben Sie die kg ein: ")
             if is_valid_float(kg):
-                kg = float(kg)
-                g = kg_in_gramm(kg)
-                print(f"\n {kg} Kilogramm sind {g} Gramm.\n")
+                kg_float: float = float(kg)
+                g: float = kg_in_gramm(kg_float)
+                print(f"\n {kg_float} Kilogramm sind {g} Gramm.\n")
             else:
                 print("\n Ungültige Eingabe. Bitte geben Sie eine gültige Zahl ein.\n")
         
         elif choice == '2':
-            cm = input("Geben Sie die cm ein: ")
+            cm: str = input("Geben Sie die cm ein: ")
             if is_valid_float(cm):
-                cm = float(cm)
-                zoll = cm_in_zoll(cm)
-                print (f"\n {cm} cm sind {zoll} Zoll. \n")
+                cm_float: float = float(cm)
+                zoll: float = cm_in_zoll(cm_float)
+                print (f"\n {cm_float} cm sind {zoll} Zoll. \n")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
             
         elif choice == '3':
-            kW = input("Geben Sie die kW ein: ")
+            kW: str = input("Geben Sie die kW ein: ")
             if is_valid_float(kW):
-                kW = float(kW)
-                W = kW_in_W(kW)
-                print (f"\n {kW} kw sind {W} W.")
+                kW_float: float = float(kW)
+                W: float = kW_in_W(kW_float)
+                print (f"\n {kW_float} kw sind {W} W.")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
