@@ -3,7 +3,7 @@ def kg_in_gramm(kg):
     return kg * 1000
 
 def cm_in_zoll(cm):
-    return cm / 2,54
+    return cm / 2.54
 
 def kW_in_W(kW):
     return kW * 1000
