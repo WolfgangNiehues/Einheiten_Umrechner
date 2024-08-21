@@ -19,11 +19,13 @@ def is_valid_float(input_str):
 #Bediener Auswahl
 def Umrechner():
     while True:
-        print("Wählen Sie eine Umrechnungsmöglichkeit:")
-        print("1. kg zu gr")
-        print("2. cm zu Zoll")
-        print("3. kW zu W")
-        print("4. Beenden")
+        print("\n Wählen Sie eine Umrechnungsmöglichkeit:")
+        print("\n 1. kg zu gr \
+               \n 2. cm zu Zoll \
+               \n 3. kW zu W \
+               \n 4. Beenden")
+            
+               
 
 #Auswahlaufforderung
         choice = input("Geben Sie die Nummer Ihrer Wahl ein: ")
