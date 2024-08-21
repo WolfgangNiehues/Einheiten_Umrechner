@@ -57,7 +57,7 @@ def Umrechner():
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
         elif choice == '4':
-            print("Programm beendet.")
+            print("\nProgramm beendet")
             break
               
         else:
