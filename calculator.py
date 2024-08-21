@@ -3,7 +3,7 @@ def kg_in_gramm(kg):
     return kg * 1000
 
 def cm_in_zoll(cm):
-    return cm * 2,54
+    return cm * 0,393701
 
 def kW_in_W(kW):
     return kW * 1000
@@ -52,7 +52,7 @@ def Umrechner():
             if is_valid_float(kW):
                 kW = float(kW)
                 W = kW_in_W(kW)
-                print (F"{kW} kw sind {W} W.")
+                print (f"{kW} kw sind {W} W.")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
