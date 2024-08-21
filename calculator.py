@@ -3,15 +3,15 @@ def kg_in_gramm(kg):
     return kg * 1000
 
 def cm_in_zoll(cm):
-    return cm * 0,393701
+    return cm / 2,54
 
 def kW_in_W(kW):
     return kW * 1000
 
 #Wenn die Eingabe für die umzurechnende Einheit kein float ist, wird dieser hier abgefangen und auf eine gültige Eingabe gewartet.
-def is_valid_float(input_str):
+def is_valid_float(Bedi_Eing):
     try:
-        float(input_str)
+        float(Bedi_Eing)
         return True
     except ValueError:
         return False
@@ -36,7 +36,7 @@ def Umrechner():
             if is_valid_float(kg):
                 kg = float(kg)
                 g = kg_in_gramm(kg)
-                print(f"{kg} Kilogramm sind {g} Gramm.\n")
+                print(f"\n {kg} Kilogramm sind {g} Gramm.\n")
             else:
                 print("\n Ungültige Eingabe. Bitte geben Sie eine gültige Zahl ein.\n")
         
@@ -45,7 +45,7 @@ def Umrechner():
             if is_valid_float(cm):
                 cm = float(cm)
                 zoll = cm_in_zoll(cm)
-                print (f"{cm} cm sind {zoll} Zoll. \n")
+                print (f"\n {cm} cm sind {zoll} Zoll. \n")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
             
@@ -54,12 +54,12 @@ def Umrechner():
             if is_valid_float(kW):
                 kW = float(kW)
                 W = kW_in_W(kW)
-                print (f"{kW} kw sind {W} W.")
+                print (f"\n {kW} kw sind {W} W.")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
         elif choice == '4':
-            print("\nProgramm beendet")
+            print("\n Programm beendet")
             break
               
         else:
