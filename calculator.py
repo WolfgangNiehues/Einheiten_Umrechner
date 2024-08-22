@@ -33,6 +33,8 @@ def Umrechner():
 #variable Berechnung
         if choice == '1':
             kg: str = input("Geben Sie die kg ein: ")
+            kg = kg.replace(",", ".")
+            kg = float(kg)
             if is_valid_float(kg):
                 kg_float: float = float(kg)
                 g: float = kg_in_gramm(kg_float)
@@ -42,6 +44,8 @@ def Umrechner():
         
         elif choice == '2':
             cm: str = input("Geben Sie die cm ein: ")
+            cm = cm.replace(",", ".")
+            cm = float(cm)
             if is_valid_float(cm):
                 cm_float: float = float(cm)
                 zoll: float = cm_in_zoll(cm_float)
@@ -51,6 +55,8 @@ def Umrechner():
             
         elif choice == '3':
             kW: str = input("Geben Sie die kW ein: ")
+            kW = kW.replace(",", ".")
+            kW = float(kW)
             if is_valid_float(kW):
                 kW_float: float = float(kW)
                 W: float = kW_in_W(kW_float)
