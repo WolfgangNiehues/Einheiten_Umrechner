@@ -1,6 +1,6 @@
 #Umrechnung
 def kg_in_gramm(kg: float) -> float:
-    return kg * 1000
+    return kg * 1000 
 
 def cm_in_zoll(cm: float) -> float:
     return cm / 2.54
@@ -38,7 +38,8 @@ def Umrechner():
             if is_valid_float(kg):
                 kg_float: float = float(kg)
                 g: float = kg_in_gramm(kg_float)
-                print(f"\n {kg_float} Kilogramm sind {g} Gramm.\n")
+                r_g = round(g, 3)
+                print(f"\n {kg_float} Kilogramm sind {r_g} Gramm.\n")
             else:
                 print("\n Ungültige Eingabe. Bitte geben Sie eine gültige Zahl ein.\n")
         
@@ -49,7 +50,8 @@ def Umrechner():
             if is_valid_float(cm):
                 cm_float: float = float(cm)
                 zoll: float = cm_in_zoll(cm_float)
-                print (f"\n {cm_float} cm sind {zoll} Zoll. \n")
+                r_z = round (zoll, 3)
+                print (f"\n {cm_float} cm sind {r_z} Zoll. \n")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
             
@@ -60,7 +62,8 @@ def Umrechner():
             if is_valid_float(kW):
                 kW_float: float = float(kW)
                 W: float = kW_in_W(kW_float)
-                print (f"\n {kW_float} kw sind {W} W.")
+                r_W = round (W, 3)
+                print (f"\n {kW_float} kw sind {r_W} W.")
             else:
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
 
