@@ -28,7 +28,7 @@ def Umrechner():
                
 
 #Auswahlaufforderung
-        choice = input("Geben Sie die Nummer Ihrer Wahl ein: ")
+        choice = input("\nGeben Sie die Nummer Ihrer Wahl ein: ")
 
 #variable Berechnung
         if choice == '1':
