@@ -32,10 +32,10 @@ def Umrechner():
 
 #variable Berechnung
         if choice == '1':
-            kg: str = input("Geben Sie die kg ein: ")
-            kg = kg.replace(",", ".")
-            kg = float(kg)
-            if is_valid_float(kg):
+            kg: str = input("Geben Sie die kg ein: ") 
+            kg = kg.replace(",", ".") 
+            kg = float(kg) 
+            if is_valid_float(kg): 
                 kg_float: float = float(kg)
                 g: float = kg_in_gramm(kg_float)
                 r_g = round(g, 3)
@@ -56,8 +56,8 @@ def Umrechner():
                 print("\n Ungültige Eingabe. Bite geben Sie eine gültige Zahl ein. \n")
             
         elif choice == '3':
-            kW: str = input("Geben Sie die kW ein: ")
-            kW = kW.replace(",", ".")
+            kW: str = input("Geben Sie die kW ein: ") 
+            kW = kW.replace(",", ".") 
             kW = float(kW)
             if is_valid_float(kW):
                 kW_float: float = float(kW)
