@@ -1,26 +1,28 @@
 # str->float
-def bed_eing_1 ():
+def bed_eing_ausw ():
     check_bed = False
     while check_bed == False:
-        bed_eing = input("\n Auswahl: ")
-        if bed_eing in ["1", "2" , "3" , "4" , "5"]:
+        bed_eing_ausw = input("\n Auswahl: ")
+        if bed_eing_ausw in ["1", "2" , "3" , "4" , "5"]:
             check_bed = True
         else:
-            print(" veruche es erneut")
-    return bed_eing
+            print(" ungültige Eingabe\
+                 \n bitte wählen Sie eine der vorgeschlagenen Zahlen")
+    return bed_eing_ausw
     
 # Eingabe Umrechnungswerte float, Komma zu Punkt und runden nach 3 Dezimalstellen
-def float_auswahl():
+def float_auswahl_wert():
     check_ausw = False
     while check_ausw == False:
-        aus_wahl = input ("\n Wert: ")
-        aus_wahl=aus_wahl.replace("," , ".")
+        aus_wahl_wert = input ("\n Wert: ")
+        aus_wahl_wert=aus_wahl_wert.replace("," , ".")
         try:
-            aus_wahl=float (aus_wahl)
+            aus_wahl_wert=float (aus_wahl_wert)
             check_ausw = True
-            return aus_wahl
+            return aus_wahl_wert
         except ValueError:
-            print(" ungültige Eingabe")
+            print(" ungültige Eingabe\
+                 \n Bitte geben Sie einen Wert an, welcher umgerechnet werden kann")
 
 # Bedienereingabe Menü
 print("	\n Wähe aus zwischen: \
@@ -31,10 +33,10 @@ print("	\n Wähe aus zwischen: \
         \n 5: beenden")
 
 #Check korrekte Menue- Auswahl, weitergabe an case
-Menue_eingabe = bed_eing_1()
+Menue_eingabe = bed_eing_ausw()
 
 #Bediener Eingabe Umrechnen
-aus_wahl_gepr = float_auswahl()
+aus_wahl_gepr = float_auswahl_wert()
 
 #Berechnung und Ausgabe
 match Menue_eingabe:
