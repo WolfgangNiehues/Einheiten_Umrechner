@@ -6,7 +6,7 @@ def bed_eing_1 ():
         if bed_eing in ["1", "2" , "3" , "4"]:
             check_bed = True
         else:
-            print("veruche es erneut")
+            print(" veruche es erneut")
     return bed_eing
     
 # Eingabe Umrechnungswerte float, Komma zu Punkt und runden nach 3 Dezimalstellen
@@ -20,15 +20,15 @@ def float_auswahl():
             check_ausw = True
             return aus_wahl
         except ValueError:
-            print("ungültige Eingabe")
+            print(" ungültige Eingabe")
 
 # Bedienereingabe Menü
-print("\n Wähe aus wischen: \
-       \n 1: cm -> zoll \
-       \n 2: cm -> m \
-       \n 3: °C -> °F \
-       \n 4: °F -> °C \
-       \n 5: beenden")
+print("	\n Wähe aus zwischen: \
+        \n 1: cm -> zoll \
+        \n 2: cm -> m \
+        \n 3: °C -> °F \
+        \n 4: °F -> °C \
+        \n 5: beenden")
 
 #Check korrekte Menue- Auswahl, weitergabe an case
 Menue_eingabe = bed_eing_1()
@@ -58,9 +58,8 @@ match Menue_eingabe:
         ergebniss = round (ergebniss ,3) #ergebniss wird gerundet überschrieben
         print(f" {aus_wahl_gepr}°F sind {ergebniss} °C")
         
-        
-        
- 
+  
+
         
 
         
