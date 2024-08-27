@@ -44,7 +44,7 @@ match Menue_eingabe:
         print(f"\n {aus_wahl_gepr}cm sind {ergebniss} Zoll")
         
     case '2':
-        ergebniss = aus_wahl_gepr/1000
+        ergebniss = aus_wahl_gepr/100
         ergebniss = round (ergebniss ,3) #ergebniss wird gerundet überschrieben
         print(f"{aus_wahl_gepr}cm sind {ergebniss} m")
         
