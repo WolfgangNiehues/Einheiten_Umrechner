@@ -3,7 +3,7 @@ def bed_eing_1 ():
     check_bed = False
     while check_bed == False:
         bed_eing = input("\n Auswahl: ")
-        if bed_eing in ["1", "2" , "3" , "4"]:
+        if bed_eing in ["1", "2" , "3" , "4" , "5"]:
             check_bed = True
         else:
             print(" veruche es erneut")
@@ -57,6 +57,9 @@ match Menue_eingabe:
         ergebniss = aus_wahl_gepr* 9/5 + 32
         ergebniss = round (ergebniss ,3) #ergebniss wird gerundet überschrieben
         print(f" {aus_wahl_gepr}°F sind {ergebniss} °C")
+        
+  
+
         
   
 
