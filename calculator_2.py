@@ -2,13 +2,13 @@
 def bed_eing_ausw ():
     check_bed = False
     while check_bed == False:
-        bed_eing_ausw = input("\n Auswahl: ")
-        if bed_eing_ausw in ["1", "2" , "3" , "4" , "5"]:
+        bed_eing = input("\n Auswahl: ")
+        if bed_eing in ["1", "2" , "3" , "4" , "5"]:
             check_bed = True
         else:
             print(" ungültige Eingabe\
                  \n bitte wählen Sie eine der vorgeschlagenen Zahlen")
-    return bed_eing_ausw
+    return bed_eing
     
 # Eingabe Umrechnungswerte float, Komma zu Punkt und runden nach 3 Dezimalstellen
 def float_auswahl_wert():
@@ -17,12 +17,14 @@ def float_auswahl_wert():
         aus_wahl_wert = input ("\n Wert: ")
         aus_wahl_wert=aus_wahl_wert.replace("," , ".")
         try:
-            aus_wahl_wert=float (aus_wahl_wert)
+            aus_wahl_wert = float (aus_wahl_wert)
             check_ausw = True
             return aus_wahl_wert
         except ValueError:
             print(" ungültige Eingabe\
                  \n Bitte geben Sie einen Wert an, welcher umgerechnet werden kann")
+    # Diese return-Anweisung stellt Konsistenz sicher (alle möglichkeiten müssen über return zurückgegeben werden))
+    return None
 
 # Bedienereingabe Menü
 print("	\n Wähe aus zwischen: \
@@ -60,7 +62,7 @@ match Menue_eingabe:
         ergebniss = round (ergebniss ,3) #ergebniss wird gerundet überschrieben
         print(f" {aus_wahl_gepr}°F sind {ergebniss} °C")
         
-  
+ 
 
         
   
