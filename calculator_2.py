@@ -23,7 +23,6 @@ while True:
             except ValueError:
                 print(" ungültige Eingabe\
                  \n Bitte geben Sie einen Wert an, welcher umgerechnet werden kann")
-# Diese return-Anweisung stellt Konsistenz sicher (alle möglichkeiten müssen über return zurückgegeben werden))
         return aus_wahl_wert
 
 # Bedienereingabe Menü
@@ -33,7 +32,7 @@ while True:
             \n 3: °C -> °F \
             \n 4: °F -> °C \
             \n 5: beenden")
-
+    
 #Check korrekte Menue- Auswahl, weitergabe an case
     Menue_eingabe = bed_eing_ausw()
 
