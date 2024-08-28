@@ -38,7 +38,8 @@ while True:
     
 #Check korrekte Menue- Auswahl, weitergabe an case
     Menue_eingabe = bed_eing_ausw()
-    
+
+#Beenden
     if Menue_eingabe == '7':
         print(" auf wiedersehen")
         break
