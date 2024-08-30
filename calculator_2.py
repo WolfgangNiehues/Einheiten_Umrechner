@@ -21,7 +21,7 @@ def float_auswahl_wert():
             check_ausw = True
         except ValueError:
             print(" ungültige Eingabe\
-                 \n Bitte geben Sie einen Wert an, welcher umgerechnet werden kann")
+                 \n Bitte geben Sie einen Wert aus, welcher umgerechnet werden kann")
     return aus_wahl_wert_float
 
 while True:
@@ -70,7 +70,7 @@ while True:
         
         #°F -> °C
         case '4':
-            ergebniss = aus_wahl_gepr* 9/5 + 32
+            ergebniss = (aus_wahl_gepr-32)*5/9
             ergebniss = round (ergebniss ,3) #ergebniss wird gerundet überschrieben
             print(f" {aus_wahl_gepr}°F sind {ergebniss} °C")
         
