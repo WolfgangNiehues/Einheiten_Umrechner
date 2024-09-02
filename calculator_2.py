@@ -21,7 +21,7 @@ def float_auswahl_wert():
             check_ausw = True
         except ValueError:
             print(" ungültige Eingabe\
-                 \n Bitte geben Sie einen Wert aus, welcher umgerechnet werden kann")
+                 \n Bitte geben Sie einen Wert ein, welcher umgerechnet werden kann")
     return aus_wahl_wert_float
 
 while True:
