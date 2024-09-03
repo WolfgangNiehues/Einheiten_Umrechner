@@ -10,7 +10,7 @@ def bed_eing_ausw ():
                     \n bitte wählen Sie eine der vorgeschlagenen Zahlen")
     return bed_eing
     
-# Eingabe Umrechnungswerte float, Komma zu Punkt und runden nach 3 Dezimalstellen
+# Eingabe Umrechnungswerte float, Komma zu Punkt 
 def float_auswahl_wert():
     check_ausw = False
     while check_ausw == False:
