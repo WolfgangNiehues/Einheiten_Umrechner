@@ -29,3 +29,5 @@ Anschließend kann man die richtige, zu berechnende Zahl eingeben.
 
 
 Zum beenden vom Programm in der Menüauswahl die "7" für beenden drücken. 
+
+calculator_2 ist das finale Programm
